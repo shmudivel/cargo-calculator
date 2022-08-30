@@ -32,9 +32,12 @@ const Volume = () => {
 
 
   return (
-    <div className="volumeCom">
+    <div>
         <div className="container">
             <h2 className="center">Box Volume Calculator</h2>
+            <div>
+
+            </div>
             <form onSubmit={calcVolume}>
                 <div>
                     <label>Depth (cm)</label>
@@ -59,7 +62,7 @@ const Volume = () => {
             </form>
 
             <div className="center">
-                <h3>TOTAL volume is: {volumeBox} m²</h3>
+                <h3>TOTAL volume is: {volumeBox} mᶟ</h3>
                 {/* <p>{message}</p> */}
             </div>
 
