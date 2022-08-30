@@ -58,7 +58,7 @@ const Volume = () => {
                 </div>
 
                 <button className="btn" type="submit">Submit</button>
-                <button className="btn btn-delete" onClick={cleanAll} type="delete">Delete</button>
+                <button className="btn btn-delete" onClick={cleanAll} type="delete">reset</button>
             </form>
 
             <div className="center">
