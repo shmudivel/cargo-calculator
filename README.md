@@ -1,5 +1,5 @@
 Demo: http://shmudivel.github.io/cargo-calculater
-
+npm run deploy
 
 # Getting Started with Create React App
 
