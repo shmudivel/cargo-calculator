@@ -20,7 +20,7 @@ const PipeVolume = () => {
                 alert('Please enter a valid parameters: Diameter, Length, Quantity')
             } else {
                 let volumePipe = ((Math.PI * diameterPipe * diameterPipe / 4) * lengthPipe * qtyVolumePipe / 1000000)
-                setVolumePipe(volumePipe.toFixed(4))
+                setVolumePipe(volumePipe.toFixed(2))
             }
         }
     

@@ -2,17 +2,24 @@ import React, { useState } from "react";
 import "../index.css";
 import PipeVolume from "../components/PipeVolume";
 import Volume from "../components/Volume";
+import Footer from "../components/Footer";
 
 function BoxAndPipe() {
-  const [isSwitch, setIsSwitch] = useState(false);
+  const [isPipeOrBox, setIsPipeOrBox] = useState(false);
 
   return (
     <div className="switch">
       <div className="container">
-        <button className="btn-switch" onClick={() => setIsSwitch(!isSwitch)}>
-          Switch
+        <button
+          className="btn-switch"
+          onClick={() => {
+            setIsPipeOrBox(!isPipeOrBox);
+          }}
+        >
+          {isPipeOrBox ? "Box" : "Pipe"}
         </button>
-        {isSwitch ? <Volume /> : <PipeVolume />}
+        {isPipeOrBox ? <PipeVolume /> : <Volume />}
+        <Footer />
       </div>
     </div>
   );

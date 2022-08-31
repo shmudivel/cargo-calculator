@@ -22,7 +22,7 @@ const Volume = () => {
             alert('Please enter a valid parameters: Depth, Length, Height')
         } else {
             let volumeBox = (((depthBox * lengthBox * heightBox) * qtyVolumeBox) / 1000000)
-            setvolumeBox(volumeBox.toFixed(4))
+            setvolumeBox(volumeBox.toFixed(2))
         }
     }
 
