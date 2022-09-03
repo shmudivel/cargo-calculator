@@ -32,7 +32,7 @@ function BoxAndPipe() {
         <div className="lngButtonsDiv">
           <button className="lngButtons" onClick={() => handleLngChange("english")}>English</button>
           <button className="lngButtons" onClick={() => handleLngChange("russian")}>Русский</button>
-          <button className="lngButtonsChina" onClick={() => handleLngChange("chinese")}>中文</button>
+          <button className="lngButtons" onClick={() => handleLngChange("chinese")}>中文</button>
         </div>
         {isPipeOrBox ? <PipeVolume /> : <Volume />}
         <Footer />
