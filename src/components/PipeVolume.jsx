@@ -31,7 +31,7 @@ const PipeVolume = () => {
           lengthPipe *
           qtyVolumePipe) /
         1000000;
-      setVolumePipe(volumePipe.toFixed(2));
+      setVolumePipe(volumePipe.toFixed(4));
     }
   };
 

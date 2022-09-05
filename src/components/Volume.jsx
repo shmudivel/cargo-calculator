@@ -34,7 +34,7 @@ const Volume = () => {
     } else {
       let volumeBox =
         (depthBox * lengthBox * heightBox * qtyVolumeBox) / 1000000;
-      setvolumeBox(volumeBox.toFixed(2));
+      setvolumeBox(volumeBox.toFixed(4));
     }
   };
 
