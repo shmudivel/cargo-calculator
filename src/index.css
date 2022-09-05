@@ -128,9 +128,9 @@ a {
 .lngButtonsChina {
   display: inline-block;
   width: 140px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin: 10px 0;
-  padding: 6px 0;
+  padding: 8px 0;
   background-color: #333;
   color: #fff;
   border: 1px solid #333;
