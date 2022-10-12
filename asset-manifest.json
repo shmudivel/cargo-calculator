@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/cargo-calculator/static/css/main.1ee9a52d.css",
-    "main.js": "/cargo-calculator/static/js/main.2adb1d41.js",
+    "main.js": "/cargo-calculator/static/js/main.515b44d2.js",
     "index.html": "/cargo-calculator/index.html",
     "main.1ee9a52d.css.map": "/cargo-calculator/static/css/main.1ee9a52d.css.map",
-    "main.2adb1d41.js.map": "/cargo-calculator/static/js/main.2adb1d41.js.map"
+    "main.515b44d2.js.map": "/cargo-calculator/static/js/main.515b44d2.js.map"
   },
   "entrypoints": [
     "static/css/main.1ee9a52d.css",
-    "static/js/main.2adb1d41.js"
+    "static/js/main.515b44d2.js"
   ]
 }
