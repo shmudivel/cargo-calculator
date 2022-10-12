@@ -1,6 +1,6 @@
 {
-  "homepage": "http://shmudivel.github.io/cargo-calculater",
-  "name": "cargo-calculater",
+  "homepage": "http://shmudivel.github.io/cargo-calculator",
+  "name": "cargo-calculator",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
