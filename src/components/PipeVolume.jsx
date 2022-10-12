@@ -24,7 +24,7 @@ const PipeVolume = () => {
     event.preventDefault();
 
     if (diameterPipe === 0 || lengthPipe === 0 || qtyVolumePipe === 0) {
-      alert("Please enter a valid parameters: Diameter, Length, Quantity");
+      alert (t("Please enter a valid parameters!"));
     } else {
       let volumePipe =
         (((Math.PI * diameterPipe * diameterPipe) / 4) *

@@ -30,7 +30,7 @@ const Volume = () => {
       heightBox === 0 ||
       qtyVolumeBox === 0
     ) {
-      alert("Please enter a valid parameters: Depth, Length, Height");
+      alert(t("Please enter a valid parameters!"));
     } else {
       let volumeBox =
         (depthBox * lengthBox * heightBox * qtyVolumeBox) / 1000000;

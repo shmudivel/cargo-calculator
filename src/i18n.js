@@ -5,6 +5,8 @@ i18n.use(initReactI18next).init({
   resources: {
     english: {
       translation: {
+        "Please enter a valid parameters!":
+        "Please enter a valid parameters!",
         "Box": "Box",
         "Pipe": "Pipe",
 
@@ -38,6 +40,10 @@ i18n.use(initReactI18next).init({
 
     russian: {
       translation: {
+        "Please enter a valid parameters!":
+        "Пожалуйста, введите правильные параметры!",
+
+
         "Box": "Коробка",
         "Pipe": "Труба",
 
@@ -58,6 +64,7 @@ i18n.use(initReactI18next).init({
         "Diameter (cm)": "Диаметр (см)",
         // "Length (cm)": "Length (см)",
         "How many pipes? (Qty)": "Количество труб? (кол-во)",
+        
 
         // Calculate: "Calculate",
         // Reset: "Reset",
@@ -70,6 +77,8 @@ i18n.use(initReactI18next).init({
 
     chinese: {
       translation: {
+        "Please enter a valid parameters!":
+        "请输入有效的参数!",
         "Box": "箱子",
         "Pipe": "管道",
 
