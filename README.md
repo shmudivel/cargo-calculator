@@ -1,6 +1,7 @@
 Demo: http://shmudivel.github.io/cargo-calculator
 
 npm run deploy
+
 npm install -g gh-pages --save-dev
 
 # Getting Started with Create React App
