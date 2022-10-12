@@ -7,7 +7,7 @@ import BoxAndPipe from "./Pages/BoxAndPipe";
 
 
 function App() {
-  // const { t, i18n } = useTranslation() 
+  
   return (
     <div>
       <BoxAndPipe />
