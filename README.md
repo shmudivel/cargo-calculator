@@ -1,6 +1,6 @@
 Demo: http://shmudivel.github.io/cargo-calculator
 
-Calc2Go is a fairly simple calculator app, that can be a huge help to cargo workers. It saves them an average of 10 minutes per set of pipes or boxes to do it using a regular calculator 20 minutes or other online options that contain extensive number of ads. Additionally, it is available in three different languages (English, Russian, and Ukrainian).
+Calc2Go is a fairly simple calculator app, that can be a huge help to cargo workers. It saves them an average of 10 minutes per set of pipes or boxes to do it using a regular calculator 20 minutes or other online options that contain extensive number of ads. Additionally, it is available in three different languages (English, Russian, and Chinese).
 
 <p align="center">
     <img src="https://github.com/shmudivel/cargo-calculator/blob/main/src/Assets/calculatorIMGforReadme.png" width="200" height="300" />
