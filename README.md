@@ -1,6 +1,6 @@
 Demo: http://shmudivel.github.io/cargo-calculator
 
-![VolumeCalculator!](/src/Assets/calculatorIMGforReadme.png | width=100)
+<img src="https://github.com/shmudivel/cargo-calculator/blob/main/src/Assets/calculatorIMGforReadme.png" width="100" height="200" />
 
 npm run deploy
 
