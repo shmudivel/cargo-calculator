@@ -1,5 +1,6 @@
 Demo: http://shmudivel.github.io/cargo-calculator
 
+![VolumeCalculator!]{src/Assets/calculatorIMGforReadme}
 npm run deploy
 
 npm install -g gh-pages --save-dev
