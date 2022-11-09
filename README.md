@@ -1,5 +1,7 @@
 Demo: http://shmudivel.github.io/cargo-calculator
 
+It is a fairly simple calculator app, but it was extremely useful for cargo workers, who personally thanked me for the initiative.
+
 <p align="center">
     <img src="https://github.com/shmudivel/cargo-calculator/blob/main/src/Assets/calculatorIMGforReadme.png" width="200" height="300" />
 </p>
