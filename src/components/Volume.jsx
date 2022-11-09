@@ -100,9 +100,9 @@ const Volume = () => {
           {/* <p>{message}</p> */}
         </div>
 
-        <div className="img-container">
+        {/* <div className="img-container">
           <img src={imgSrc} alt="" />
-        </div>
+        </div> */}
       </div>
     </div>
   );

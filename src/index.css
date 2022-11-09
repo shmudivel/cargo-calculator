@@ -4,6 +4,12 @@
   padding: 0;
 }
 
+.app {
+  min-height: px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
 .volumeCom {
   flex-direction: column;
   justify-content: center;
@@ -55,12 +61,11 @@ input {
 
 .center {
   text-align: center;
-  margin: 10px 0;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
-.img-container {
-  text-align: center;
-}
+
 
 .switch {
   display: flex;
@@ -75,7 +80,7 @@ input {
   display: block;
   width: 100%;
   font-size: 1.2rem;
-  margin: 8px 0;
+  margin: 0px 0;
   padding: 10px 0;
   background-color: #333;
   color: #fff;
@@ -113,7 +118,7 @@ a {
 
 .lngButtons {
   display: inline-block;
-  width: 140px;
+  min-width: 80px;
   font-size: 1rem;
   margin: 10px 0;
   padding: 8px 0;
@@ -127,7 +132,7 @@ a {
 
 .lngButtonsChina {
   display: inline-block;
-  width: 140px;
+  min-width: 80px;
   font-size: 0.9rem;
   margin: 10px 0;
   padding: 8px 0;

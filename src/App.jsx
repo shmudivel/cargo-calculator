@@ -9,7 +9,7 @@ import BoxAndPipe from "./Pages/BoxAndPipe";
 function App() {
   
   return (
-    <div>
+    <div className="app">
       <BoxAndPipe />
     </div>
   );
