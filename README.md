@@ -2,6 +2,10 @@ Demo: http://shmudivel.github.io/cargo-calculator
 
 It is a fairly simple calculator app, but it was extremely useful for cargo workers, who personally thanked me for the initiative.
 
+Save them an average of 10 minutes per set of pipes or boxes to do it using a regular calculator or other online options that contain extensive number of ads.
+
+Additionally, it is available in three different languages. They basically take screenshots and send them to their client from abroad.
+
 <p align="center">
     <img src="https://github.com/shmudivel/cargo-calculator/blob/main/src/Assets/calculatorIMGforReadme.png" width="200" height="300" />
 </p>
