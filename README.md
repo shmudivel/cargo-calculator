@@ -1,6 +1,8 @@
 Demo: http://shmudivel.github.io/cargo-calculator
 
-<img src="https://github.com/shmudivel/cargo-calculator/blob/main/src/Assets/calculatorIMGforReadme.png" width="200" height="300" />
+<p align="center">
+    <img src="https://github.com/shmudivel/cargo-calculator/blob/main/src/Assets/calculatorIMGforReadme.png" width="200" height="300" />
+</p>
 
 npm run deploy
 
