@@ -14,11 +14,14 @@ const Volume = () => {
   const [depthBox, setdepthBox] = useState(0);
   const [lengthBox, setlengthBox] = useState(0);
   const [heightBox, setheightBox] = useState(0);
-  const [volumeBox, setvolumeBox] = useState(0);
-
   const [qtyVolumeBox, setQtyVolumeBox] = useState(0);
 
-  let imgSrc = "";
+  const [ratePriceBox, setRatePriceBox] = useState(0)
+  
+  const [volumeBox, setvolumeBox] = useState(0);
+  const [totalPriceBox, setTotalPriceBox] = useState(0)
+
+  // let imgSrc = "";
 
   // calculations
   let calcVolume = (event) => {
@@ -28,13 +31,18 @@ const Volume = () => {
       depthBox === 0 ||
       lengthBox === 0 ||
       heightBox === 0 ||
-      qtyVolumeBox === 0
+      qtyVolumeBox === 0 ||
+      ratePriceBox === 0
+
     ) {
       alert(t("Please enter a valid parameters!"));
     } else {
-      let volumeBox =
+      const volumeBox =
         (depthBox * lengthBox * heightBox * qtyVolumeBox) / 1000000;
       setvolumeBox(volumeBox.toFixed(4));
+
+      const priceCalculation = volumeBox * ratePriceBox;
+      setTotalPriceBox(priceCalculation.toFixed(2));
     }
   };
 
@@ -84,6 +92,15 @@ const Volume = () => {
             />
           </div>
 
+          <div>
+            <label>{t("Price per 1mᶟ (USD $)")}</label>
+            <input
+              value={ratePriceBox}
+              onChange={(event) => setRatePriceBox(event.target.value)}
+              type="number"
+            />
+          </div>
+
           <button className="btn" type="submit">
             {t("Calculate")}
           </button>
@@ -96,6 +113,10 @@ const Volume = () => {
           <h3>
             {t("TOTAL volume is: ")}
             {volumeBox} {t("mᶟ")}
+          </h3>
+          <h3>
+            {t("TOTAL sum is: ")}
+            {totalPriceBox} {t("")}
           </h3>
           {/* <p>{message}</p> */}
         </div>

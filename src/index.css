@@ -4,8 +4,10 @@
   padding: 0;
 }
 
+
+
 .app {
-  min-height: px;
+  height: 100vh;
   padding-top: 5px;
   padding-bottom: 20px;
 }
