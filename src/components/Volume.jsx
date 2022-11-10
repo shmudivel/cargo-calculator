@@ -61,6 +61,7 @@ const Volume = () => {
           <div>
             <label>{t("Depth (cm)")} </label>
             <input
+              placeholder="Depth (cm)"
               value={depthBox}
               onChange={(event) => setdepthBox(event.target.value)}
               type="number"
