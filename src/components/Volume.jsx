@@ -93,7 +93,7 @@ const Volume = () => {
           </div>
 
           <div>
-            <label>{t("Price per 1mᶟ (USD $)")}</label>
+            <label>{t("Price per 1mᶟ")}</label>
             <input
               value={ratePriceBox}
               onChange={(event) => setRatePriceBox(event.target.value)}
