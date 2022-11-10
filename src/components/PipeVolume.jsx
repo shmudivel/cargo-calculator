@@ -13,9 +13,12 @@ const PipeVolume = () => {
   // state
   const [diameterPipe, setDiameterPipe] = useState(0);
   const [lengthPipe, setLengthPipe] = useState(0);
+  const [qtyVolumePipe, setQtyVolumePipe] = useState(0);
+  
   const [volumePipe, setVolumePipe] = useState(0);
 
-  const [qtyVolumePipe, setQtyVolumePipe] = useState(0);
+  const [ratePricePipe, setRatePricePipe] = useState(0)
+  const [totalPricePipe, setTotalPricePipe] = useState(0)
 
   let imgSrc = "";
 
@@ -23,15 +26,15 @@ const PipeVolume = () => {
   let calcVolumePipe = (event) => {
     event.preventDefault();
 
-    if (diameterPipe === 0 || lengthPipe === 0 || qtyVolumePipe === 0) {
+    if (diameterPipe === 0 || lengthPipe === 0 || qtyVolumePipe === 0 || ratePricePipe === 0) {
       alert (t("Please enter a valid parameters!"));
     } else {
-      let volumePipe =
-        (((Math.PI * diameterPipe * diameterPipe) / 4) *
-          lengthPipe *
-          qtyVolumePipe) /
-        1000000;
+      const volumePipe =
+        (((Math.PI * diameterPipe * diameterPipe) / 4) * lengthPipe * qtyVolumePipe) / 1000000;
       setVolumePipe(volumePipe.toFixed(4));
+
+      const priceCalculationPipe = volumePipe * ratePricePipe;
+      setTotalPricePipe(priceCalculationPipe.toFixed(2));
     }
   };
 
@@ -73,6 +76,15 @@ const PipeVolume = () => {
             />
           </div>
 
+          <div className="qtyOfBox">
+            <label>{t("Price per 1mᶟ")}</label>
+            <input
+              value={ratePricePipe}
+              onChange={(event) => setRatePricePipe(event.target.value)}
+              type="number"
+            />
+          </div>
+
           <button className="btn" type="submit">
             {t("Calculate")}
           </button>
@@ -83,6 +95,11 @@ const PipeVolume = () => {
 
         <div className="center">
           <h3>{t("TOTAL volume is: ")}{volumePipe} {t("mᶟ")}</h3>
+          {/* <p>{message}</p> */}
+        </div>
+
+        <div className="center">
+          <h3>{t("TOTAL sum is: ")}{totalPricePipe} {t("")}</h3>
           {/* <p>{message}</p> */}
         </div>
 
