@@ -31,13 +31,15 @@
 }
 
 .container {
-  background-color: #ccc;
-  box-shadow: 0px 0px 5px #ccc;
+  background-color: #d9d9d9;
+  background-size: cover;
+  box-shadow: 0px 0px 20px #878787;
   border-radius: 4px;
   padding: 0.8rem;
 }
 
 input {
+  box-shadow: 0px 0px 5px #575757;
   border: none;
   width: 100%;
   font-size: 1rem;
