@@ -6,7 +6,7 @@
 
 .app {
   background-color: #333;
-  background-image: url("background.png");
+  background-image: url("/src/assets/background.png");
   background-size: cover;
   height: 100vh;
   padding-top: 5px;
