@@ -1,10 +1,10 @@
 import React from "react";
-import BoxOrPipe from "./components/BoxOrPipe";
+import SwitchBoxOrPipe from "./components/SwitchBoxOrPipe";
 
 function App() {
   return (
     <div className="app">
-      <BoxOrPipe />
+      <SwitchBoxOrPipe />
     </div>
   );
 }
