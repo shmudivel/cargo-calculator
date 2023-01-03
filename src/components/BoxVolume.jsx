@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../index.css";
 import { useTranslation } from "react-i18next";
 
@@ -7,15 +7,15 @@ const Volume = () => {
   const { t } = useTranslation();
 
   // state
-  const [depthBox, setdepthBox] = useState(0);
-  const [lengthBox, setlengthBox] = useState(0);
-  const [heightBox, setheightBox] = useState(0);
-  const [qtyVolumeBox, setQtyVolumeBox] = useState(0);
+  const [depthBox, setDepthBox] = useState("");
+  const [lengthBox, setLengthBox] = useState("");
+  const [heightBox, setHeightBox] = useState("");
+  const [qtyVolumeBox, setQtyVolumeBox] = useState("");
 
-  const [ratePriceBox, setRatePriceBox] = useState(0);
+  const [ratePriceBox, setRatePriceBox] = useState("");
 
-  const [volumeBox, setvolumeBox] = useState(0);
-  const [totalPriceBox, setTotalPriceBox] = useState(0);
+  const [volumeBox, setVolumeBox] = useState("");
+  const [totalPriceBox, setTotalPriceBox] = useState("");
 
   // calculations
   let calcVolume = (event) => {
@@ -32,15 +32,48 @@ const Volume = () => {
     } else {
       const volumeBox =
         (depthBox * lengthBox * heightBox * qtyVolumeBox) / 1000000;
-      setvolumeBox(volumeBox.toFixed(4));
+      setVolumeBox(volumeBox.toFixed(4));
 
       const priceCalculation = volumeBox * ratePriceBox;
       setTotalPriceBox(priceCalculation.toFixed(2));
     }
   };
 
+  useEffect(() => {
+    const depthBox = localStorage.getItem("depthBox");
+    const lengthBox = localStorage.getItem("lengthBox");
+    const heightBox = localStorage.getItem("heightBox");
+    const qtyVolumeBox = localStorage.getItem("qtyVolumeBox");
+    const ratePriceBox = localStorage.getItem("ratePriceBox");
+
+    if (depthBox) {
+      setDepthBox(depthBox);
+    }
+    if (lengthBox) {
+      setLengthBox(lengthBox);
+    }
+    if (heightBox) {
+      setHeightBox(heightBox);
+    }
+    if (qtyVolumeBox) {
+      setQtyVolumeBox(qtyVolumeBox);
+    }
+    if (ratePriceBox) {
+      setRatePriceBox(ratePriceBox);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("depthBox", depthBox);
+    localStorage.setItem("lengthBox", lengthBox);
+    localStorage.setItem("heightBox", heightBox);
+    localStorage.setItem("qtyVolumeBox", qtyVolumeBox);
+    localStorage.setItem("ratePriceBox", ratePriceBox);
+  }, [depthBox, lengthBox, heightBox, qtyVolumeBox, ratePriceBox]);
+
   let cleanAll = () => {
     window.location.reload();
+    localStorage.clear();
   };
 
   return (
@@ -50,34 +83,37 @@ const Volume = () => {
 
         <form onSubmit={calcVolume}>
           <div>
-            <label>{t("Depth (cm)")} </label>
+            {/* <label>{t("Depth (cm)")} </label> */}
             <input
-              placeholder="Depth (cm)"
+              placeholder={t("Depth (cm)")}
               value={depthBox}
-              onChange={(event) => setdepthBox(event.target.value)}
+              onChange={(event) => setDepthBox(event.target.value)}
               type="number"
             />
           </div>
           <div>
-            <label>{t("Length (cm)")}</label>
+            {/* <label>{t("Length (cm)")}</label> */}
             <input
+              placeholder={t("Length (cm)")}
               value={lengthBox}
-              onChange={(event) => setlengthBox(event.target.value)}
+              onChange={(event) => setLengthBox(event.target.value)}
               type="number"
             />
           </div>
           <div>
-            <label>{t("Height (cm)")}</label>
+            {/* <label>{t("Height (cm)")}</label> */}
             <input
+              placeholder={t("Height (cm)")}
               value={heightBox}
-              onChange={(event) => setheightBox(event.target.value)}
+              onChange={(event) => setHeightBox(event.target.value)}
               type="number"
             />
           </div>
 
           <div className="qtyOfBox">
-            <label> {t("How many boxes? (Qty)")}</label>
+            {/* <label> {t("How many boxes? (Qty)")}</label> */}
             <input
+              placeholder={t("How many boxes? (Qty)")}
               value={qtyVolumeBox}
               onChange={(event) => setQtyVolumeBox(event.target.value)}
               type="number"
@@ -85,8 +121,9 @@ const Volume = () => {
           </div>
 
           <div>
-            <label>{t("Price per 1mᶟ")}</label>
+            {/* <label>{t("Price per 1mᶟ")}</label> */}
             <input
+              placeholder={t("Price per 1mᶟ")}
               value={ratePriceBox}
               onChange={(event) => setRatePriceBox(event.target.value)}
               type="number"
