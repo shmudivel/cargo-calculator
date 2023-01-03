@@ -5,10 +5,6 @@ import { useTranslation } from "react-i18next";
 const Volume = () => {
   //Languages
   const { t } = useTranslation();
-  // const handleLngChange = (lng) => {
-  //   i18n.changeLanguage(lng);
-  //   localStorage.setItem("lng", lng);
-  // };
 
   // state
   const [depthBox, setdepthBox] = useState(0);
@@ -16,12 +12,10 @@ const Volume = () => {
   const [heightBox, setheightBox] = useState(0);
   const [qtyVolumeBox, setQtyVolumeBox] = useState(0);
 
-  const [ratePriceBox, setRatePriceBox] = useState(0)
-  
-  const [volumeBox, setvolumeBox] = useState(0);
-  const [totalPriceBox, setTotalPriceBox] = useState(0)
+  const [ratePriceBox, setRatePriceBox] = useState(0);
 
-  // let imgSrc = "";
+  const [volumeBox, setvolumeBox] = useState(0);
+  const [totalPriceBox, setTotalPriceBox] = useState(0);
 
   // calculations
   let calcVolume = (event) => {
@@ -33,7 +27,6 @@ const Volume = () => {
       heightBox === 0 ||
       qtyVolumeBox === 0 ||
       ratePriceBox === 0
-
     ) {
       alert(t("Please enter a valid parameters!"));
     } else {
@@ -54,8 +47,6 @@ const Volume = () => {
     <div>
       <div className="container">
         <h2 className="center">{t("Box Volume Calculator")}</h2>
-
-
 
         <form onSubmit={calcVolume}>
           <div>
@@ -119,12 +110,7 @@ const Volume = () => {
             {t("TOTAL sum is: ")}
             {totalPriceBox} {t("")}
           </h3>
-          {/* <p>{message}</p> */}
         </div>
-
-        {/* <div className="img-container">
-          <img src={imgSrc} alt="" />
-        </div> */}
       </div>
     </div>
   );

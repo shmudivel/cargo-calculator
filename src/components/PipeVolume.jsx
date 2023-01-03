@@ -14,11 +14,11 @@ const PipeVolume = () => {
   const [diameterPipe, setDiameterPipe] = useState(0);
   const [lengthPipe, setLengthPipe] = useState(0);
   const [qtyVolumePipe, setQtyVolumePipe] = useState(0);
-  
+
   const [volumePipe, setVolumePipe] = useState(0);
 
-  const [ratePricePipe, setRatePricePipe] = useState(0)
-  const [totalPricePipe, setTotalPricePipe] = useState(0)
+  const [ratePricePipe, setRatePricePipe] = useState(0);
+  const [totalPricePipe, setTotalPricePipe] = useState(0);
 
   let imgSrc = "";
 
@@ -26,11 +26,19 @@ const PipeVolume = () => {
   let calcVolumePipe = (event) => {
     event.preventDefault();
 
-    if (diameterPipe === 0 || lengthPipe === 0 || qtyVolumePipe === 0 || ratePricePipe === 0) {
-      alert (t("Please enter a valid parameters!"));
+    if (
+      diameterPipe === 0 ||
+      lengthPipe === 0 ||
+      qtyVolumePipe === 0 ||
+      ratePricePipe === 0
+    ) {
+      alert(t("Please enter a valid parameters!"));
     } else {
       const volumePipe =
-        (((Math.PI * diameterPipe * diameterPipe) / 4) * lengthPipe * qtyVolumePipe) / 1000000;
+        (((Math.PI * diameterPipe * diameterPipe) / 4) *
+          lengthPipe *
+          qtyVolumePipe) /
+        1000000;
       setVolumePipe(volumePipe.toFixed(4));
 
       const priceCalculationPipe = volumePipe * ratePricePipe;
@@ -46,8 +54,6 @@ const PipeVolume = () => {
     <div>
       <div className="container">
         <h2 className="center">{t("Pipe Volume Calculator")}</h2>
-
-
 
         <form onSubmit={calcVolumePipe}>
           <div>
@@ -94,12 +100,18 @@ const PipeVolume = () => {
         </form>
 
         <div className="center">
-          <h3>{t("TOTAL volume is: ")}{volumePipe} {t("mᶟ")}</h3>
+          <h3>
+            {t("TOTAL volume is: ")}
+            {volumePipe} {t("mᶟ")}
+          </h3>
           {/* <p>{message}</p> */}
         </div>
 
         <div className="center">
-          <h3>{t("TOTAL sum is: ")}{totalPricePipe} {t("")}</h3>
+          <h3>
+            {t("TOTAL sum is: ")}
+            {totalPricePipe} {t("")}
+          </h3>
           {/* <p>{message}</p> */}
         </div>
 
