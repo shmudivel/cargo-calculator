@@ -1,5 +1,5 @@
 import React from "react";
-import BoxAndPipe from "./Pages/BoxAndPipe";
+import BoxAndPipe from "./components/BoxAndPipe";
 
 function App() {
   return (
