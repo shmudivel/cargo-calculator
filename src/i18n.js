@@ -27,13 +27,7 @@ i18n.use(initReactI18next).init({
         // Pipe
         "Pipe Volume Calculator": "Pipe Volume Calculator",
         "Diameter (cm)": "Diameter (cm)",
-        // "Length (cm)": "Length (cm)",
         "How many pipes? (Qty)": "How many pipes? (Qty)",
-
-        // Calculate: "Calculate",
-        // Reset: "Reset",
-
-        // "TOTAL volume is: ": "TOTAL volume is: ",
 
         mᶟ: "mᶟ",
       },
@@ -64,13 +58,7 @@ i18n.use(initReactI18next).init({
         // Pipe
         "Pipe Volume Calculator": "Расчет объема труб",
         "Diameter (cm)": "Диаметр (см)",
-        // "Length (cm)": "Length (см)",
         "How many pipes? (Qty)": "Количество труб? (кол-во)",
-
-        // Calculate: "Calculate",
-        // Reset: "Reset",
-
-        // "TOTAL volume is: ": "TOTAL volume is: ",
 
         mᶟ: "м³",
       },
@@ -99,13 +87,7 @@ i18n.use(initReactI18next).init({
         // Pipe
         "Pipe Volume Calculator": "管道体积计算器",
         "Diameter (cm)": "直径 (cm)",
-        // "Length (cm)": "Length (cm)",
         "How many pipes? (Qty)": "管道数量?",
-
-        // Calculate: "Calculate",
-        // Reset: "Reset",
-
-        // "TOTAL volume is: ": "TOTAL volume is: ",
 
         mᶟ: "mᶟ",
       },
