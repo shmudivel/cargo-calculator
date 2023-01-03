@@ -62,7 +62,6 @@ input {
   padding: 8px 0;
   background-color: #333;
   color: #fff;
-  border: 1px solid #333;
   border-radius: 8px;
   cursor: pointer;
 }
@@ -71,6 +70,11 @@ input {
   border: none;
   background-color: #fff;
   color: #333;
+}
+
+.btn-delete:hover {
+  box-shadow: inset 0px 0px 200px #ff0000;
+  transition: 0.5s;
 }
 
 .center {
@@ -97,7 +101,6 @@ input {
   padding: 8px 0;
   background-color: #333;
   color: #fff;
-  border: 1px solid #333;
   border-radius: 8px;
   cursor: pointer;
 }
@@ -125,6 +128,8 @@ a {
 .lngButtons:hover,
 .lngButtonsChina:hover {
   color: gray;
+  background-color: #fff;
+  transition: 0.5s;
 }
 
 .lngButtonsDiv {
