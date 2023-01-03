@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../index.css";
 import { useTranslation } from "react-i18next";
+import { BsBoxSeam } from "react-icons/bs";
 
 const Volume = () => {
   //Languages
@@ -79,7 +80,11 @@ const Volume = () => {
   return (
     <div>
       <div className="container">
-        <h2 className="center">{t("Box Volume Calculator")}</h2>
+        <h2 className="center">
+          <BsBoxSeam />
+          {t(" Box Volume Calculator ")}
+          <BsBoxSeam />
+        </h2>
 
         <form onSubmit={calcVolume}>
           <div>

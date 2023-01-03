@@ -10,7 +10,7 @@ i18n.use(initReactI18next).init({
         Pipe: "Pipe",
 
         // Box
-        "Box Volume Calculator": "Box Volume Calculator",
+        " Box Volume Calculator ": "Box Volume Calculator",
 
         "Depth (cm)": "Depth (cm)",
         "Length (cm)": "Length (cm)",
@@ -41,7 +41,7 @@ i18n.use(initReactI18next).init({
         Box: "Коробка",
         Pipe: "Труба",
 
-        "Box Volume Calculator": "Расчет объема коробки",
+        " Box Volume Calculator ": "Расчет объема коробки",
 
         "Depth (cm)": "Глубина (см)",
         "Length (cm)": "Длина (см)",
@@ -70,7 +70,7 @@ i18n.use(initReactI18next).init({
         Box: "箱子",
         Pipe: "管道",
 
-        "Box Volume Calculator": "箱子体积计算器",
+        " Box Volume Calculator ": "箱子体积计算器",
 
         "Depth (cm)": "宽度 (cm)",
         "Length (cm)": "长度 (cm)",
