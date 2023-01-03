@@ -1,24 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../index.css";
 import { useTranslation } from "react-i18next";
 
 const PipeVolume = () => {
   //Languages
   const { t } = useTranslation();
-  // const handleLngChange = (lng) => {
-  //   i18n.changeLanguage(lng);
-  //   localStorage.setItem("lng", lng);
-  // };
 
   // state
-  const [diameterPipe, setDiameterPipe] = useState(0);
-  const [lengthPipe, setLengthPipe] = useState(0);
-  const [qtyVolumePipe, setQtyVolumePipe] = useState(0);
+  const [diameterPipe, setDiameterPipe] = useState("");
+  const [lengthPipe, setLengthPipe] = useState("");
+  const [qtyVolumePipe, setQtyVolumePipe] = useState("");
 
-  const [volumePipe, setVolumePipe] = useState(0);
+  const [volumePipe, setVolumePipe] = useState("");
 
-  const [ratePricePipe, setRatePricePipe] = useState(0);
-  const [totalPricePipe, setTotalPricePipe] = useState(0);
+  const [ratePricePipe, setRatePricePipe] = useState("");
+  const [totalPricePipe, setTotalPricePipe] = useState("");
 
   let imgSrc = "";
 
@@ -48,7 +44,35 @@ const PipeVolume = () => {
 
   let cleanAll = () => {
     window.location.reload();
+    localStorage.clear();
   };
+
+  useEffect(() => {
+    const diameterPipe = localStorage.getItem("diameterPipe");
+    const lengthPipe = localStorage.getItem("lengthPipe");
+    const qtyVolumePipe = localStorage.getItem("qtyVolumePipe");
+    const ratePricePipe = localStorage.getItem("ratePricePipe");
+
+    if (diameterPipe) {
+      setDiameterPipe(diameterPipe);
+    }
+    if (lengthPipe) {
+      setLengthPipe(lengthPipe);
+    }
+    if (qtyVolumePipe) {
+      setQtyVolumePipe(qtyVolumePipe);
+    }
+    if (ratePricePipe) {
+      setRatePricePipe(ratePricePipe);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("diameterPipe", diameterPipe);
+    localStorage.setItem("lengthPipe", lengthPipe);
+    localStorage.setItem("qtyVolumePipe", qtyVolumePipe);
+    localStorage.setItem("ratePricePipe", ratePricePipe);
+  }, [diameterPipe, lengthPipe, qtyVolumePipe, ratePricePipe]);
 
   return (
     <div>
