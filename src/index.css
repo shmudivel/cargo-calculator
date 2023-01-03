@@ -79,7 +79,7 @@ input[type="number"]:focus {
 
 .btn-delete:hover {
   box-shadow: inset 0px 0px 200px #ff0000;
-  transition: 0.5s;
+  transition: 2s ease;
 }
 
 .center {
