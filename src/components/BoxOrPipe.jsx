@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../index.css";
 import PipeVolume from "./PipeVolume";
-import Volume from "./Volume";
+import Volume from "./BoxVolume";
 import Footer from "./Footer";
 import { useTranslation } from "react-i18next";
 

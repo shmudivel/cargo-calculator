@@ -1,10 +1,10 @@
 import React from "react";
-import BoxAndPipe from "./components/BoxAndPipe";
+import BoxOrPipe from "./components/BoxOrPipe";
 
 function App() {
   return (
     <div className="app">
-      <BoxAndPipe />
+      <BoxOrPipe />
     </div>
   );
 }
