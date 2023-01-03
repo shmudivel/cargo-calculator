@@ -17,8 +17,6 @@ const PipeVolume = () => {
   const [ratePricePipe, setRatePricePipe] = useState("");
   const [totalPricePipe, setTotalPricePipe] = useState("");
 
-  let imgSrc = "";
-
   // calculations
   let calcVolumePipe = (event) => {
     event.preventDefault();
@@ -141,11 +139,6 @@ const PipeVolume = () => {
             {t("TOTAL sum is: ")}
             {totalPricePipe} {t("")}
           </h3>
-          {/* <p>{message}</p> */}
-        </div>
-
-        <div className="img-container">
-          <img src={imgSrc} alt="" />
         </div>
       </div>
     </div>
