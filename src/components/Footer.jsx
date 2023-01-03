@@ -1,19 +1,33 @@
 import React from "react";
-// import github from '../Assets/github.png'
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <div className="footer">
       <p>
-        Code:{" "}
         <a
           className="imgFooter"
           href="https://github.com/shmudivel/cargo-calculater.git"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaGithub />
+          <FaGithub size={40} />
+        </a>
+        <a
+          className="imgFooter"
+          href="https://www.linkedin.com/in/darkhan-iglikov-24a616157"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaLinkedin size={40} />
+        </a>
+        <a
+          className="imgFooter"
+          href="https://twitter.com/_Darkhand_"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaTwitterSquare size={40} />
         </a>
       </p>
     </div>
