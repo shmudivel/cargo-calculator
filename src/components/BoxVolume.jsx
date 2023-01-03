@@ -81,9 +81,9 @@ const Volume = () => {
     <div>
       <div className="container">
         <h2 className="center">
-          <BsBoxSeam />
+          <BsBoxSeam size={50} />
           {t(" Box Volume Calculator ")}
-          <BsBoxSeam />
+          <BsBoxSeam size={50} />
         </h2>
 
         <form onSubmit={calcVolume}>

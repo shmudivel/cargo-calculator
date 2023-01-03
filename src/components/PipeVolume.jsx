@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../index.css";
 import { useTranslation } from "react-i18next";
+import { GiWarpPipe } from "react-icons/gi";
 
 const PipeVolume = () => {
   //Languages
@@ -77,7 +78,11 @@ const PipeVolume = () => {
   return (
     <div>
       <div className="container">
-        <h2 className="center">{t("Pipe Volume Calculator")}</h2>
+        <h2 className="center">
+          <GiWarpPipe size={50} />
+          {t("Pipe Volume Calculator")}
+          <GiWarpPipe size={50} />
+        </h2>
 
         <form onSubmit={calcVolumePipe}>
           <div>
