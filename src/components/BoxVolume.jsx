@@ -83,27 +83,27 @@ const Volume = () => {
 
         <form onSubmit={calcVolume}>
           <div>
-            {/* <label>{t("Depth (cm)")} </label> */}
+            <label>{t("Depth (cm)")} </label>
             <input
-              placeholder={t("Depth (cm)")}
+              // placeholder={t("Depth (cm)")}
               value={depthBox}
               onChange={(event) => setDepthBox(event.target.value)}
               type="number"
             />
           </div>
           <div>
-            {/* <label>{t("Length (cm)")}</label> */}
+            <label>{t("Length (cm)")}</label>
             <input
-              placeholder={t("Length (cm)")}
+              // placeholder={t("Length (cm)")}
               value={lengthBox}
               onChange={(event) => setLengthBox(event.target.value)}
               type="number"
             />
           </div>
           <div>
-            {/* <label>{t("Height (cm)")}</label> */}
+            <label>{t("Height (cm)")}</label>
             <input
-              placeholder={t("Height (cm)")}
+              // placeholder={t("Height (cm)")}
               value={heightBox}
               onChange={(event) => setHeightBox(event.target.value)}
               type="number"
@@ -111,9 +111,9 @@ const Volume = () => {
           </div>
 
           <div className="qtyOfBox">
-            {/* <label> {t("How many boxes? (Qty)")}</label> */}
+            <label> {t("How many boxes? (Qty)")}</label>
             <input
-              placeholder={t("How many boxes? (Qty)")}
+              // placeholder={t("How many boxes? (Qty)")}
               value={qtyVolumeBox}
               onChange={(event) => setQtyVolumeBox(event.target.value)}
               type="number"
@@ -121,9 +121,9 @@ const Volume = () => {
           </div>
 
           <div>
-            {/* <label>{t("Price per 1mᶟ")}</label> */}
+            <label>{t("Price per 1mᶟ")}</label>
             <input
-              placeholder={t("Price per 1mᶟ")}
+              // placeholder={t("Price per 1mᶟ")}
               value={ratePriceBox}
               onChange={(event) => setRatePriceBox(event.target.value)}
               type="number"
