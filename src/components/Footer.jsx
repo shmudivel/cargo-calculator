@@ -1,5 +1,10 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaTwitterSquare,
+  FaTelegram,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -28,6 +33,14 @@ const Footer = () => {
           rel="noopener noreferrer"
         >
           <FaTwitterSquare size={40} />
+        </a>
+        <a
+          className="imgFooter"
+          href="https://t.me/shmudivel"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaTelegram size={40} />
         </a>
       </p>
     </div>
