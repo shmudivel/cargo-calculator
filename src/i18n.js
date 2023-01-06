@@ -18,16 +18,16 @@ i18n.use(initReactI18next).init({
         "How many boxes? (Qty)": "How many boxes? (Qty)",
         "Price per 1mᶟ": "Price per 1mᶟ",
 
+        // Pipe
+        "Pipe Volume Calculator": "Pipe Volume Calculator",
+        "Diameter (cm)": "Diameter (cm)",
+        "How many pipes? (Qty)": "How many pipes? (Qty)",
+
         Calculate: "Calculate",
         Reset: "Reset",
 
         "TOTAL volume is: ": "TOTAL volume is: ",
         "TOTAL sum is: ": "TOTAL sum is: ",
-
-        // Pipe
-        "Pipe Volume Calculator": "Pipe Volume Calculator",
-        "Diameter (cm)": "Diameter (cm)",
-        "How many pipes? (Qty)": "How many pipes? (Qty)",
 
         mᶟ: "mᶟ",
       },
@@ -49,16 +49,16 @@ i18n.use(initReactI18next).init({
         "How many boxes? (Qty)": "Количество коробок? (кол-во)",
         "Price per 1mᶟ": "Стоимость за 1 мᶟ",
 
+        // Pipe
+        "Pipe Volume Calculator": "Расчет объема труб",
+        "Diameter (cm)": "Диаметр (см)",
+        "How many pipes? (Qty)": "Количество труб? (кол-во)",
+
         Calculate: "Рассчитать",
         Reset: "Сброс",
 
         "TOTAL volume is: ": "Общий объем: ",
         "TOTAL sum is: ": "Общая сумма: ",
-
-        // Pipe
-        "Pipe Volume Calculator": "Расчет объема труб",
-        "Diameter (cm)": "Диаметр (см)",
-        "How many pipes? (Qty)": "Количество труб? (кол-во)",
 
         mᶟ: "м³",
       },
@@ -78,16 +78,16 @@ i18n.use(initReactI18next).init({
         "How many boxes? (Qty)": "箱子数量？",
         "Price per 1mᶟ": "一立方米价格",
 
+        // Pipe
+        "Pipe Volume Calculator": "管道体积计算器",
+        "Diameter (cm)": "直径 (cm)",
+        "How many pipes? (Qty)": "管道数量?",
+
         Calculate: "计算",
         Reset: "清除",
 
         "TOTAL volume is: ": "总体积: ",
         "TOTAL sum is: ": "总金额为: ",
-
-        // Pipe
-        "Pipe Volume Calculator": "管道体积计算器",
-        "Diameter (cm)": "直径 (cm)",
-        "How many pipes? (Qty)": "管道数量?",
 
         mᶟ: "mᶟ",
       },
