@@ -12,9 +12,7 @@ const Volume = () => {
   const [lengthBox, setLengthBox] = useState("");
   const [heightBox, setHeightBox] = useState("");
   const [qtyVolumeBox, setQtyVolumeBox] = useState("");
-
   const [ratePriceBox, setRatePriceBox] = useState("");
-
   const [volumeBox, setVolumeBox] = useState("");
   const [totalPriceBox, setTotalPriceBox] = useState("");
 
