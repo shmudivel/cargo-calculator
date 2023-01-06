@@ -7,7 +7,7 @@ const PipeVolume = () => {
   //Languages
   const { t } = useTranslation();
 
-  // state
+  // State
   const [diameterPipe, setDiameterPipe] = useState("");
   const [lengthPipe, setLengthPipe] = useState("");
   const [qtyVolumePipe, setQtyVolumePipe] = useState("");
@@ -17,7 +17,7 @@ const PipeVolume = () => {
   const [ratePricePipe, setRatePricePipe] = useState("");
   const [totalPricePipe, setTotalPricePipe] = useState("");
 
-  // calculations
+  // Calculations
   let calcVolumePipe = (event) => {
     event.preventDefault();
 
