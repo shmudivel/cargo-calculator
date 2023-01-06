@@ -26,14 +26,14 @@ const Footer = () => {
         >
           <FaLinkedin size={40} />
         </a>
-        <a
+        {/* <a
           className="imgFooter"
           href="https://twitter.com/_Darkhand_"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaTwitterSquare size={40} />
-        </a>
+        </a> */}
         <a
           className="imgFooter"
           href="https://t.me/shmudivel"
